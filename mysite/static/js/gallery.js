@@ -12,10 +12,10 @@ $(window).on("load", function () {
    });
 
 function get_origin_src (elem) {
-    var src = $(this).attr("src");
+    var src = elem.attr("src");
     src = src.replace("filer_public_thumbnails/", "");
     src = src.substr(0, src.indexOf("__"));
-    $(this).attr("src", src);
+    elem.attr("src", src);
 }
 // actions
 $(".cmsplugin_filer_folder_list li > img").each(function () {
