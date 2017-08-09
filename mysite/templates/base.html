@@ -1,0 +1,25 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% include "inc.html" %}
+<!doctype html>
+<html>
+    <head>
+        <title>7th Heaven. {% block title %}This is my new project home page{% endblock title %}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        {% render_block "css" %}
+    </head>
+    <body>
+        {% cms_toolbar %}
+        <section class="main_container">
+            {% include "struct/header.html" %}
+
+            <section class="content">
+                <div class="container">
+                    {% block content %}{% endblock content %}
+                </div>
+            </section>
+
+            {% include "struct/footer.html" %}
+        </section>
+        {% render_block "js" %}
+    </body>
+</html>

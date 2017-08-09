@@ -1,0 +1,18 @@
+{% load sekizai_tags %}
+{% load static %}
+
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+{% endaddtoblock %}
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/header_position.js' %}"></script>
+{% endaddtoblock %}
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/rooms_list.js' %}"></script>
+{% endaddtoblock %}
+{% addtoblock "js" %}
+    <script type="text/javascript" src="{% static 'js/gallery.js' %}"></script>
+{% endaddtoblock %}
+{% addtoblock "css" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+{% endaddtoblock %}
