@@ -87,14 +87,23 @@ nav {
     list-style-type: none;
 }
 .nav li a {
-    padding: 16px;
+    margin: 16px;
+    font-weight: bold;
+    color: #7A748C;
+}
+nav li a:hover {
+   color: #372963;
+}
+nav li a:visited {
+   color: #7A748C;
 }
 .nav li.selected a {
-    color: #7A748C;
+    color: #372963;
     padding: 5px;
+    margin: 0;
     background: #f4fcff;
     border-radius: 20px;
-    border: #7A748C 3px solid;
+    border: #7A748C 2px solid;
 }
 
 /*elem*/
