@@ -5,6 +5,9 @@ body {
     font-size: 14px;
     color: #4c444f;
 }
+.content {
+    overflow: hidden;
+}
 .container {
     width: 960px;
     margin: 0 auto;
