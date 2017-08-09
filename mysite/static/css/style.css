@@ -115,6 +115,13 @@ nav li a:hover {
 }
 
 /*elem*/
+h2 {
+    background: linear-gradient(to left, #fff, #c6c1d2);
+    color: #372963;
+}
+h3 {
+    color: #372963;
+}
 a {
     text-decoration: none;
 }
