@@ -6,6 +6,9 @@ body {
     width: 940px;
     margin: 0 auto
 }
+.main_container_main {
+    background: pink;
+}
 
 /*header*/
 header {
@@ -66,7 +69,7 @@ footer {
     width: 250px;
     float: left;
 }
-.logo img {
+.logo > img {
     width: 100%;
 }
 
@@ -171,5 +174,4 @@ cms-plugin.cms-plugin-text-node,
 .cmsplugin_filer_folder_slideshow > img {
     border: 0 !important;
     padding: 0 !important;
-    z-index: auto;
 }
