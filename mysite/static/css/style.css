@@ -91,7 +91,7 @@ nav {
     padding: 26px;
 }
 .nav li.selected a {
-    color: aqua;
+    color: #7A748C;
     padding: 10px;
     background: #f4fcff;
     border-radius: 20px;
