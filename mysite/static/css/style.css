@@ -43,6 +43,13 @@ footer {
     float: left;
     width: 70%;
 }
+.footer_content a {
+    color: #7a748c;
+}
+.footer_content a:hover {
+    text-decoration: underline;
+    color: #372963;
+}
 .footer_links {
     float: right;
     width: 30%;
