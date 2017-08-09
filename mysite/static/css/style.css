@@ -1,0 +1,126 @@
+/*main*/
+body {
+    margin: 0;
+}
+.container {
+    width: 940px;
+    margin: 0 auto
+}
+
+/*header*/
+header {
+    position: fixed;
+    width: 100%;
+    background: #bad6fb;
+}
+header .header_content {
+    overflow: hidden;
+}
+header h1 {
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    margin-top: 30px;
+}
+
+/*logo*/
+.logo {
+    width: 250px;
+    float: left;
+}
+.logo img {
+    width: 100%;
+}
+
+/*nav*/
+nav {
+    float: right;
+}
+.nav {
+    padding-left: 0;
+}
+.nav li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+.nav li.selected a {
+    color: aqua;
+}
+
+/*elem*/
+a {
+    text-decoration: none;
+}
+
+/*gallery*/
+cms-plugin.cms-plugin-text-node,
+.cmsplugin_filer_folder_list p {
+    display: none;
+}
+.cmsplugin_filer_folder_list ul {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+}
+.cmsplugin_filer_folder_list li {
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+.cmsplugin_filer_folder_list li > img {
+    width: 100%;
+}
+.cmsplugin_filer_folder_list img:hover {
+    cursor: pointer;
+}
+#img_view {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.85);
+}
+#img_view:hover,
+.img_view_close:hover {
+    cursor: pointer;
+}
+#img_view .container {
+    position: relative;
+    height: 100%;
+}
+#img_view img {
+    max-width: 95%;
+    max-height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*form*/
+#form_mail {
+    width: 50%;
+    margin: 0 auto;
+    border: 3px solid lightblue;
+}
+#form_mail label:hover,
+#form_mail input[type=submit]:hover {
+    cursor: pointer;
+}
+#form_mail label,
+#form_mail input {
+    display: block;
+    width: 80%;
+    margin: 3px auto 5px;
+    padding: 10px 5px;
+}
+#form_mail input[type=submit] {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+    border: 0;
+    background: lightblue;
+}
