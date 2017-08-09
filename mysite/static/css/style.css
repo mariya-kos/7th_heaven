@@ -16,6 +16,7 @@ header {
     width: 100%;
     background: linear-gradient(to top, #9a8eb9, #e3e3e3);
     border-bottom: #7a748c 3px solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 999;
 }
 header .header_content {
