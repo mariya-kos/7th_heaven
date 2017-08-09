@@ -12,6 +12,7 @@ header {
     position: fixed;
     width: 100%;
     background: #bad6fb;
+    z-index: 999;
 }
 header .header_content {
     overflow: hidden;
@@ -27,17 +28,18 @@ footer {
 }
 .footer_content {
     float: left;
-    width: 50%;
+    width: 70%;
 }
 .footer_links {
     float: right;
-    width: 50%;
+    width: 30%;
 }
 .footer_links ul {
     list-style: none;
 }
 .footer_links li {
     float: right;
+    margin-left: 10px;
 }
 .footer_links a {
     width: 35px;
