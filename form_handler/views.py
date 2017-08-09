@@ -4,6 +4,9 @@ from django.shortcuts import render, redirect
 from form_handler.forms import ContactForm
 
 def email(request):
+
+    print(request.POST)
+
     if request.method == 'GET':
         form = ContactForm()
     else:
