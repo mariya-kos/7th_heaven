@@ -37,11 +37,11 @@ footer {
     list-style: none;
 }
 .footer_links li {
-    float: left;
+    float: right;
 }
 .footer_links a {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     display: inline-block;
     background-size: contain;
 }
@@ -50,6 +50,10 @@ footer {
 }
 .footer_links a.link_booking {
     background-image: url("icons/booking.png");
+}
+.copyright {
+    width: 100%;
+    overflow: hidden;
 }
 .copyright p {
     text-align: center;
