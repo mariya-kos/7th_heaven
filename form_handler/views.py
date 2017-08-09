@@ -13,12 +13,12 @@ def email(request):
         form = ContactForm(request.POST)
         print(form)
         if form.is_valid():
-            subject = form.cleaned_data['form_theme']
-            from_email = form.cleaned_data['form_email']
-            message = form.cleaned_data['form_name'] + '\n'
-            message += form.cleaned_data['form_text']
+            theme = form.cleaned_data['theme']
+            email = form.cleaned_data['email']
+            text = form.cleaned_data['name'] + '\n'
+            text += form.cleaned_data['text']
             try:
-                send_mail(subject, message, from_email, ['admin@example.com'])
+                send_mail(theme, text, email, ['mariyakosacheva@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('thanks')
