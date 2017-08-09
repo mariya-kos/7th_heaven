@@ -12,10 +12,10 @@ header {
     position: fixed;
     width: 100%;
     background: #bad6fb;
-    padding-top: 10px;
 }
 header .header_content {
     overflow: hidden;
+    padding-top: 10px;
 }
 header h1 {
     text-align: center;
