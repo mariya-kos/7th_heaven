@@ -3,5 +3,8 @@
     {{ html }}
     {{ form }}
     {{ form.non_field_errors }}
+    {% for field in form %}
+        <li>{{ field.errors }}</li>
+    {% endfor %}
     <input type="submit">
 </form>
