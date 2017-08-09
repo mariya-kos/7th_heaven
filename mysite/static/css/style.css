@@ -58,7 +58,7 @@ a {
 /*gallery*/
 cms-plugin.cms-plugin-text-node,
 .cmsplugin_filer_folder_list p {
-    display: none;
+    display: none !important;
 }
 .cmsplugin_filer_folder_list ul {
     overflow: hidden;
@@ -123,4 +123,11 @@ cms-plugin.cms-plugin-text-node,
     margin: 0;
     border: 0;
     background: lightblue;
+}
+/*slider*/
+.cmsplugin_filer_folder_slideshow {
+    position: inherit;
+}
+.cmsplugin_filer_folder_slideshow > img {
+    position: inherit !important;
 }
