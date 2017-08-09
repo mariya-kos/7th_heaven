@@ -12,6 +12,7 @@ header {
     position: fixed;
     width: 100%;
     background: #bad6fb;
+    padding-top: 10px;
 }
 header .header_content {
     overflow: hidden;
@@ -37,6 +38,7 @@ footer {
 /*nav*/
 nav {
     float: right;
+    padding-top: 20px;
 }
 .nav {
     padding-left: 0;
@@ -129,8 +131,10 @@ cms-plugin.cms-plugin-text-node,
     height: 550px;
     overflow: hidden;
     padding: 0 !important;
+    margin-top: 10px;
 }
 .cmsplugin_filer_folder_slideshow > img {
     border: 0 !important;
     padding: 0 !important;
+    z-index: auto;
 }
