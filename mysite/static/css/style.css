@@ -31,6 +31,16 @@ footer {
 .footer_links {
     float: right;
 }
+.footer_links a {
+    width: 20px;
+    height: 20px;
+}
+.footer_links a.link_vk {
+    background: url("static/images/icons/vk.png");
+}
+.footer_links a.link_booking {
+    background: url("static/images/icons/booking.png");
+}
 .copyright p {
     text-align: center;
 }
