@@ -20,7 +20,7 @@ urlpatterns = [
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', include(admin.site.urls)),  # NOQA
-    url(r'^contacts_send/$', views.email, name='email'),
+    url(r'^email/$', views.email, name='email'),
     url(r'^', include('cms.urls')),
 )
 
