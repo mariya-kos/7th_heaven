@@ -38,10 +38,17 @@ header h1 {
 /*footer*/
 footer {
     margin-top: 30px;
+    border-bottom: #7a748c 2px solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 .footer_content {
     float: left;
     width: 70%;
+}
+.footer_content .mission {
+    font-style: italic;
+    border-bottom: #9a8eb9 1px solid;
+    padding-bottom: 15px;
 }
 .footer_content a {
     color: #7a748c;
