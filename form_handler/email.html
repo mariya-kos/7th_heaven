@@ -1,7 +1,5 @@
-<form method="post">
+<form id="form_mail" method="post" action="{% url 'email' %}">
     {% csrf_token %}
-    {{ form }}
-    <div class="form-actions">
-      <button type="submit">Отправить</button>
-    </div>
+    {{ html }}
+    <input type="submit">
 </form>
