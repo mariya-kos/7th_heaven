@@ -1,0 +1,35 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+{% include "inc.html" %}
+<!doctype html>
+<html>
+    <head>
+        <title>7th Heaven</title>
+        <link rel="icon" href="{% static 'favicon.png' %}">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        {% render_block "css" %}
+    </head>
+    <body>
+        {% cms_toolbar %}
+        <section class="main_container_main">
+            <header>
+                <div class="container">
+                    <div class="header_content">
+                        <div class="logo"><img src="{% static 'logotype.png' %}" alt="7thHeaven_logotype"></div>
+                        <nav>
+                            <ul class="nav">{% show_menu 0 100 100 100 %}</ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+                <div class="container">
+                    {% block content %}{% endblock content %}
+                </div>
+            </section>
+
+            {% include "struct/footer.html" %}
+        </section>
+        {% render_block "js" %}
+    </body>
+</html>
