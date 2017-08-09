@@ -36,10 +36,10 @@ footer {
     height: 20px;
 }
 .footer_links a.link_vk {
-    background: url("static/images/icons/vk.png");
+    background: url("icons/vk.png");
 }
 .footer_links a.link_booking {
-    background: url("static/images/icons/booking.png");
+    background: url("icons/booking.png");
 }
 .copyright p {
     text-align: center;
