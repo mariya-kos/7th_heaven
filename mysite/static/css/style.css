@@ -125,14 +125,14 @@ cms-plugin.cms-plugin-text-node,
     background: lightblue;
 }
 /*slider*/
-.cmsplugin_filer_folder_slideshow {
-    position: inherit !important;
-    height: 400px;
-}
-.cmsplugin_filer_folder_slideshow > img {
-    position: inherit !important;
-    max-height: 100%;
-    max-width: 100%;
-    border: 0;
-    padding: 0;
-}
+/*.cmsplugin_filer_folder_slideshow {*/
+    /*position: inherit !important;*/
+    /*height: 400px;*/
+/*}*/
+/*.cmsplugin_filer_folder_slideshow > img {*/
+    /*position: inherit !important;*/
+    /*max-height: 100%;*/
+    /*max-width: 100%;*/
+    /*border: 0;*/
+    /*padding: 0;*/
+/*}*/
