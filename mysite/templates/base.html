@@ -1,9 +1,11 @@
 {% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
 {% include "inc.html" %}
 <!doctype html>
 <html>
     <head>
         <title>7th Heaven. {% block title %}This is my new project home page{% endblock title %}</title>
+        <link rel="icon" href="{% static 'favicon.png' %}">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         {% render_block "css" %}
     </head>
