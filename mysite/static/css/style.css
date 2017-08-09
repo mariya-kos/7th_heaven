@@ -14,7 +14,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    background: #bad6fb;
+    background: linear-gradient(to top, #bda4fe, #a06cf1);;
     z-index: 999;
 }
 header .header_content {
