@@ -19,7 +19,7 @@ def email(request):
                 return HttpResponse('Invalid header found.')
             return redirect('thanks')
         else:
-            print("kjdfnkjfn")
+            print("form is not valid")
     return render(request, "form_handler/email.html", {'form': form})
 
 def thanks(request):
