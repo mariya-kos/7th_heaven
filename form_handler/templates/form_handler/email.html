@@ -1,5 +1,6 @@
 <form id="form_mail" method="post" action="{% url 'email' %}">
     {% csrf_token %}
     {{ html }}
+    {{ form }}
     <input type="submit">
 </form>
