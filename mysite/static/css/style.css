@@ -25,6 +25,15 @@ header h1 {
 footer {
     margin-top: 30px;
 }
+.footer_content {
+    float: left;
+}
+.footer_links {
+    float: right;
+}
+.copyright p {
+    text-align: center;
+}
 
 /*logo*/
 .logo {
