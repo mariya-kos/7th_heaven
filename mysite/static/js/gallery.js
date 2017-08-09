@@ -1,15 +1,23 @@
-   $(window).on("load", function () {
+$(window).on("load", function () {
        $(".cmsplugin_filer_folder_list li > img").each(function () {
-           var src = $(this).attr("src");
-           src = src.replace("filer_public_thumbnails/", "");
-           src = src.substr(0, src.indexOf("32x32") - 2);
-           $(this).attr("src", src);
+           get_origin_src($(this));
 
            $(this).removeAttr("width");
            $(this).removeAttr("height");
        });
+
+       $(".cmsplugin_filer_folder_slideshow > img").each(function () {
+           get_origin_src($(this));
+       });
    });
 
+function get_origin_src (elem) {
+    var src = $(this).attr("src");
+    src = src.replace("filer_public_thumbnails/", "");
+    src = src.substr(0, src.indexOf("__"));
+    $(this).attr("src", src);
+}
+// actions
 $(".cmsplugin_filer_folder_list li > img").each(function () {
     $(this).on("click", function () {
          $(this).parent("li").addClass("selected_img");
