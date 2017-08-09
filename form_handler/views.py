@@ -8,6 +8,7 @@ def email(request):
         form = ContactForm()
     else:
         form = ContactForm(request.POST)
+        print(form)
         if form.is_valid():
             subject = form.cleaned_data['form_theme']
             from_email = form.cleaned_data['form_email']
