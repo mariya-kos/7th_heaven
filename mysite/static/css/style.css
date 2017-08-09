@@ -27,19 +27,29 @@ footer {
 }
 .footer_content {
     float: left;
+    width: 50%;
 }
 .footer_links {
     float: right;
+    width: 50%;
+}
+.footer_links ul {
+    list-style: none;
+}
+.footer_links li {
+    float: left;
 }
 .footer_links a {
     width: 20px;
     height: 20px;
+    display: inline-block;
+    background-size: contain;
 }
 .footer_links a.link_vk {
-    background: url("icons/vk.png");
+    background-image: url("icons/vk.png") ;
 }
 .footer_links a.link_booking {
-    background: url("icons/booking.png");
+    background-image: url("icons/booking.png");
 }
 .copyright p {
     text-align: center;
