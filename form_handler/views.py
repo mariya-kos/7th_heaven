@@ -24,7 +24,7 @@ def email(request):
             return redirect('thanks')
         else:
             print("form is not valid")
-    return render(request, "form_handler/email.html", {'form': form})
+    return render(request, "ru/ji", {'form': form})
 
 def thanks(request):
     return HttpResponse('Thank you for your message.')
