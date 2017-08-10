@@ -360,6 +360,9 @@ to {display: block;}
         overflow: hidden;
         float: none;
     }
+    .footer_links ul {
+        overflow: hidden;
+    }
     .footer_links li {
         float: left;
     }
