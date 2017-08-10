@@ -25,4 +25,4 @@ def email(request):
     return render(request, "form_handler/email.html", {'form': form})
 
 def thanks(request):
-    return HttpResponse('<section class="thanks_content"><p>Thank you for your message.</p><p><a href="../../ru/">Вернуться на главную!</a></p></section>')
+    return HttpResponse('<style>body{font:font-family:Verdana,sans-serif;font-size:14px;color:#4c444f;}a{color:#5b7033;text-decoration:none;}a:hover{color:#8b2525;text-decoration:underline;}</style><section class="thanks_content"><p>Thank you for your message.</p><p><a href="../../ru/">Вернуться на главную!</a></p></section>')
