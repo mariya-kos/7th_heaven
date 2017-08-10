@@ -4,8 +4,11 @@ $(window).on("load", function () {
         $(this).next().attr("id", id + '_imgs');
 
         if (id.slice(0,-1) == 'room_') {
-            console.log($(this))
+            $(this).css("display", "none");
         }
+    });
+    $(".rooms dd").each(function () {
+        $(this).append($('#' + $(this).attr("id") + '_imgs').html());
     });
 });
 
