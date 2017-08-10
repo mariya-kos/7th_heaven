@@ -136,6 +136,9 @@ h3 {
 a {
     text-decoration: none;
 }
+br {
+    clear: both;
+}
 
 /*gallery*/
 cms-plugin.cms-plugin-text-node,
