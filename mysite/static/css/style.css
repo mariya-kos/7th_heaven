@@ -362,6 +362,7 @@ to {display: block;}
     }
     .footer_links ul {
         overflow: hidden;
+        padding: 0;
     }
     .footer_links li {
         float: left;
