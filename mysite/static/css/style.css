@@ -125,6 +125,8 @@ nav li a:hover {
 
 /*elem*/
 h2 {
+    margin: 0;
+    padding: 10px;
     background: linear-gradient(to left, #fff, #c6c1d2);
     color: #372963;
 }
@@ -195,7 +197,9 @@ cms-plugin.cms-plugin-text-node,
     display: block;
     width: 80%;
     margin: 3px auto 5px;
-    padding: 10px 5px;
+}
+#form_mail input {
+    padding: 5px;
 }
 #form_mail input[type=submit] {
     width: 100%;
@@ -203,6 +207,8 @@ cms-plugin.cms-plugin-text-node,
     margin: 0;
     border: 0;
     background: lightblue;
+    color: #a06cf1;
+    font-weight: bold;
 }
 /*slider*/
 .cmsplugin_filer_folder_slideshow {
