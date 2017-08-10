@@ -10,14 +10,14 @@ $(window).on("load", function () {
         var dd_id = $(this).attr("id").slice(0,-5);
         var html = $('#' + dd_id + ' ul').html();
         $(this).append('<div class="cmsplugin_filer_folder_list room_imgs"><ul>' + html + '</ul></div>');
-        $(".room_imgs img").each(function () {
-            $(this).on("click", function () {
-                 $(this).parent("li").addClass("selected_img");
-                 var src = $(this).attr("src");
-                 var elem = "<div id='img_view'><div class='container'><img src='" + src + "'/></div></div>";
-
-                $("body").append(elem);
-                $("#img_view").on("click", function (e) {
+        // $(".room_imgs img").each(function () {
+        //     $(this).on("click", function () {
+        //          $(this).parent("li").addClass("selected_img");
+        //          var src = $(this).attr("src");
+        //          var elem = "<div id='img_view'><div class='container'><img src='" + src + "'/></div></div>";
+        //
+        //         $("body").append(elem);
+        //         $("#img_view").on("click", function (e) {
                     // var offset = $(this).offset();
                     // var x = e.pageX - offset.left;
                     // var y = e.pageY - offset.top;
@@ -32,11 +32,11 @@ $(window).on("load", function () {
                     //     img.attr("src", $(".selected_img").children().attr("src"));
                     // }
                     // else {
-                        $(this).remove();
+                    //     $(this).remove();
                     // }
-                });
-            });
-        });
+                // });
+            // });
+        // });
     });
 });
 

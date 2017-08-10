@@ -20,7 +20,6 @@ function get_origin_src (elem) {
 // actions
 $(".cmsplugin_filer_folder_list li > img").each(function () {
     $(this).on("click", function () {
-        console.log('clicked')
          $(this).parent("li").addClass("selected_img");
          var src = $(this).attr("src");
          var elem = "<div id='img_view'><div class='container'><img src='" + src + "'/></div></div>";
