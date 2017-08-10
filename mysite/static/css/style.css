@@ -259,11 +259,14 @@ to {display: block;}
     display: none;
     animation: room_view  2s infinite ease-in-out;
 }
-.rroms .selected_rooms {
+.rooms .selected_room {
     padding: 5px;
     background: #ad8ac3;
     border: #7a748c 1px solid;
     border-bottom: 0;
+}
+.rooms .selected_room:hover {
+    cursor: pointer;
 }
 .rooms dd.selected_room_desc {
     display: block;
