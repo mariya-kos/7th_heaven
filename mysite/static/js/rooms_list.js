@@ -1,4 +1,9 @@
-console.log("hello")
+$(window).on("load", function () {
+    $("cms-plugin.cms-plugin-text-node").each(function () {
+        console.log($("cms-plugin.cms-plugin-text-node").text());
+    });
+});
+
 $(".rooms dt").on("click", function () {
     $(".selected_room_desc").removeClass("selected_room_desc");
     var selected_room = $(".selected_room");
