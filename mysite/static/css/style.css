@@ -328,6 +328,7 @@ to {display: block;}
         position: absolute;
         background: #44ccd4;
         border: #a0a1af 1px solid;
+        border-top: 0;
     }
     .nav li {
         display: block;
