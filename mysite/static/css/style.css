@@ -6,7 +6,6 @@ body {
     color: #4c444f;
 }
 .content {
-    padding: 10px;
     overflow: hidden;
 }
 .main_container {
@@ -40,8 +39,7 @@ header .container {
 /*footer*/
 footer {
     margin-top: 30px;
-    border-bottom: #7a748c 2px solid;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-top: #7a748c 1px solid;
 }
 .footer_content {
     float: left;
@@ -53,7 +51,7 @@ footer {
     padding-bottom: 15px;
 }
 .footer_content a {
-    color: #7a748c;
+    color: #5b7033;;
 }
 .footer_content a:hover {
     text-decoration: underline;
@@ -88,7 +86,7 @@ footer {
 }
 .copyright p {
     text-align: center;
-    line-height: 0;
+    line-height: 10px;
     font-size: 12px;
 }
 
@@ -133,14 +131,21 @@ nav li a:hover {
 }
 
 /*elem*/
+p {
+    margin: 5px;
+}
 h2 {
-    margin: 0;
+    margin: 10px 0;
     padding: 10px;
-    background: linear-gradient(to left, #fff, #c6c1d2);
-    color: #372963;
+    background: linear-gradient(to left, rgba(255,255,255,0.00001), #d2c1c1);
+    color: #717671;
 }
 h3 {
-    color: #372963;
+    margin: 10px 0;
+    color: #888d88;
+}
+h4 {
+    margin-bottom: 0;
 }
 a {
     text-decoration: none;
@@ -252,12 +257,15 @@ from {display: none;}
 to {display: block;}
 }
 .rooms {
-    background: #ccaaeb;
+    background: #acdbdf;
     border: #7a748c 2px solid;
     padding: 10px;
 }
 .rooms dt {
     padding: 5px;
+}
+.rooms dt:hover {
+    color: #cf4a4c;
 }
 .rooms dd {
     display: none;
@@ -265,9 +273,10 @@ to {display: block;}
 }
 .rooms .selected_room {
     padding: 5px;
-    background: #ad8ac3;
+    background: #99e129;
     border: #7a748c 1px solid;
     border-bottom: 0;
+    color: #0d3b40;
 }
 .rooms dt:hover,
 .rooms .selected_room:hover {
@@ -275,7 +284,7 @@ to {display: block;}
 }
 .rooms dd.selected_room_desc {
     display: block;
-    background: #de9797;
+    background: #c8ebee;
     margin-left: 0;
     padding: 0 5px;
     border: #7a748c 1px solid;
