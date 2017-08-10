@@ -9,7 +9,7 @@ $(window).on("load", function () {
     $(".rooms dd").each(function () {
         var dd_id = $(this).attr("id").slice(0,-5);
         var html = $('#' + dd_id + ' ul').html();
-        $(this).append('<div class="cmsplugin_filer_folder_list room_imgs"' + html + '</div>');
+        $(this).append('<div class="cmsplugin_filer_folder_list room_imgs">' + html + '</div>');
     });
 });
 
