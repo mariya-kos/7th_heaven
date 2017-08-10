@@ -296,6 +296,9 @@ to {display: block;}
         width: 100%;
         float: left;
     }
+    .cmsplugin_filer_folder_list li {
+        height: 200px;
+    }
 }
 @media screen and (max-width: 650px) {
     #form_mail {
