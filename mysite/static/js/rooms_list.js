@@ -1,6 +1,6 @@
 $(window).on("load", function () {
     $("cms-plugin.cms-plugin-text-node").each(function () {
-        console.log($("cms-plugin.cms-plugin-text-node").text());
+        console.log($("cms-plugin.cms-plugin-text-node").text().trim());
     });
 });
 
