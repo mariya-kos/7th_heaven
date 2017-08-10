@@ -1,11 +1,11 @@
 $(window).on("load", function () {
     $("cms-plugin.cms-plugin-text-node").each(function () {
         var id = $(this).text().trim();
-        $(this).next().attr("id", id + '_imgs');
 
         if (id.slice(0,-1) == 'room_') {
             $(this).css("display", "none");
         }
+        $(this).next().attr("id", id + '_imgs');
     });
     $(".rooms dd").each(function () {
         $(this).append($('#' + $(this).attr("id") + '_imgs').html());
