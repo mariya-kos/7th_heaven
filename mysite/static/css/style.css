@@ -110,7 +110,7 @@ nav {
     list-style-type: none;
 }
 .nav li a {
-    margin: 16px;
+    margin-left: 10px;
     color: #7A748C;
 }
 nav li a:visited {
@@ -120,12 +120,7 @@ nav li a:hover {
    color: #372963;
 }
 .nav li.selected a {
-    color: #372963;
-    padding: 5px;
-    margin: 0;
-    background: #f4fcff;
-    border-radius: 20px;
-    border: #7A748C 2px solid;
+    color: #f4fcff;
 }
 
 /*elem*/

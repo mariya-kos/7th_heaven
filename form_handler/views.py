@@ -13,8 +13,8 @@ def email(request):
         if form.is_valid():
             theme = form.cleaned_data['theme']
             email = form.cleaned_data['email']
-            text = form.cleaned_data['name'] + '\n'
-            text += form.cleaned_data['text']
+            text = 'Имя: ' + form.cleaned_data['name'] + '\n'
+            text += 'Teкст сообщения: ' + form.cleaned_data['text']
             try:
                 send_mail(theme, text, email, ['mariyakosacheva@gmail.com'])
             except BadHeaderError:
@@ -25,4 +25,4 @@ def email(request):
     return render(request, "form_handler/email.html", {'form': form})
 
 def thanks(request):
-    return HttpResponse('<section class="thanks_content">Thank you for your message.</section><p><a href="../../ru/contacts">Вернуться на страницу!</a></p>')
+    return HttpResponse('<section class="thanks_content"><p>Thank you for your message.</p><p><a href="../../ru/">Вернуться на главную!</a></p></section>')
