@@ -243,6 +243,14 @@ cms-plugin.cms-plugin-text-node,
     padding: 0 !important;
 }
 /*rooms_list*/
+@keyframes room_view {
+from {display: none;}
+to {display: block;}
+}
 .rooms dd {
     display: none;
+    animation: room_view  2s infinite ease-in-out;
+}
+.rooms dd.selected_room_desc {
+    display: block;
 }
