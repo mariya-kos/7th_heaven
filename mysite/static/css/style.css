@@ -316,6 +316,7 @@ to {display: block;}
         padding: 0;
         margin-top: 8px;
         background: url("menu_icon.png");
+        background-size: contain;
     }
     .nav {
         display: none;
