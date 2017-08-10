@@ -25,4 +25,4 @@ def email(request):
     return render(request, "form_handler/email.html", {'form': form})
 
 def thanks(request):
-    return HttpResponse('Thank you for your message.')
+    return HttpResponse('<div>Thank you for your message.</div>')
