@@ -314,20 +314,20 @@ to {display: block;}
         height: 30px;
         position: relative;
         padding: 0;
-        margin-top: 8px;
+        margin-top: 17px;
         background: url("menu_icon.png");
         background-size: contain;
     }
     .nav {
         display: none;
         width: 150px;
-        top: 30px;
         padding: 10px;
+        margin: 0;
+        top: 30px;
         right: 0;
         position: absolute;
-        z-index: 1000;
-        background: yellow;
-        margin: 0;
+        background: #44ccd4;
+        border: #a0a1af 1px solid;
     }
     .nav li {
         display: block;
