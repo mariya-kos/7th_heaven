@@ -26,7 +26,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    background: linear-gradient(to top, #9a8eb9, #e3e3e3);
+    background: linear-gradient(to top, #44cdd5, #5f9691);
     border-bottom: #7a748c 3px solid;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 999;
@@ -125,7 +125,7 @@ nav li a:visited {
    color: #7A748C;
 }
 nav li a:hover {
-   color: #372963;
+   color: #cf4a4c;
 }
 .nav li.selected a {
     color: #f4fcff;
@@ -143,7 +143,7 @@ h3 {
 }
 a {
     text-decoration: none;
-    color: #8229a3;
+    color: ##a1e81b;
 }
 br {
     clear: both;
@@ -275,4 +275,11 @@ to {display: block;}
     margin-left: 0;
     padding: 0 5px;
     border: #7a748c 1px solid;
+}
+
+/*adaptive*/
+@media screen and (max-width: 650px) {
+    #form_mail {
+        width: 80%;
+    }
 }
