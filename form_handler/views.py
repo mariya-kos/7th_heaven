@@ -28,4 +28,4 @@ def thanks(request):
     style = '<style>body{font:font-family:Verdana,sans-serif;font-size:14px;color:#4c444f;}a{color:#5b7033;text-decoration:none;}a:hover{color:#8b2525;text-decoration:underline;}</style>'
     content = '<p>Ваше сообщение отправлено!</p>'
     link_back = '<p><a href="../../ru/">Вернуться на главную!</a></p>'
-    return HttpResponse(f'{style}<section>{content}{link_back}</section>')
+    return HttpResponse('{}<section>{}{}</section>'.format(style, content, link_back))
