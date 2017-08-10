@@ -310,12 +310,22 @@ to {display: block;}
 }
 @media screen and (max-width: 560px) {
     nav {
+        float: right;
         width: 30px;
         height: 30px;
+        padding: 0;
+        margin-top: 8px;
         background: url("menu_icon.png");
+        background: red;
+    }
+    .nav {
+        display: none;
     }
     nav:hover {
         cursor: pointer;
+    }
+    nav:hover .nav {
+        display: block;
     }
 }
 @media screen and (max-width: 480px) {
