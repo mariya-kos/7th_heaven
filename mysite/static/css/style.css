@@ -200,10 +200,11 @@ cms-plugin.cms-plugin-text-node,
 
 /*form*/
 #form_mail {
-    clear: both;
     width: 40%;
     margin: 10px auto;
-    border: 3px solid lightblue;
+    border: 1px solid #7d788d;
+    background: #ececec;
+    padding-top: 10px;
 }
 #form_mail label:hover,
 #form_mail input[type=submit]:hover {
@@ -226,8 +227,8 @@ cms-plugin.cms-plugin-text-node,
     padding: 15px 0;
     margin: 0;
     border: 0;
-    background: lightblue;
-    color: #7a748c ;
+    background: #888496;
+    color: #edf5f6;
     font-weight: bold;
     font-size: 16px;
 }
@@ -304,7 +305,10 @@ to {display: block;}
     .cmsplugin_filer_folder_slideshow {
         float: none;
         width: 90%;
-        margin: 0 auto 10px;
+        margin: 10px auto;
+    }
+    .cmsplugin_filer_folder_list li {
+        height: 150px;
     }
 }
 @media screen and (max-width: 560px) {
@@ -340,6 +344,9 @@ to {display: block;}
     nav:hover .nav {
         display: block;
     }
+    .cmsplugin_filer_folder_list li {
+        height: 100px;
+    }
 }
 @media screen and (max-width: 480px) {
     #form_mail {
@@ -356,5 +363,20 @@ to {display: block;}
     }
     .footer_content .mission {
         text-align: center;
+    }
+}
+@media screen and (max-width: 420px) {
+    nav {
+        margin-top: 0;
+    }
+    .header_email {
+        text-align: left;
+        float: left;
+    }
+}
+@media screen and (max-width: 360px) {
+    .cmsplugin_filer_folder_list li {
+        width: auto;
+        height: 200px;
     }
 }
