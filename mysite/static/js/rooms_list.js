@@ -6,5 +6,5 @@ $(".rooms dt").on("click", function () {
         selected_room.removeClass("selected_room");
     }
     $(this).toggleClass("selected_room");
-    $("selected_room").next("dd").addClass("selected_room_desc");
+    $(".selected_room").next("dd").addClass("selected_room_desc");
 });
