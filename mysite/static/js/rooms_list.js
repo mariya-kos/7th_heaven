@@ -2,6 +2,10 @@ $(window).on("load", function () {
     $("cms-plugin.cms-plugin-text-node").each(function () {
         var id = $(this).text().trim();
         $(this).next().attr("id", id);
+        var pattern = '/room_\\d/i';
+        if (pattern.test(id)) {
+            print($(this))
+        }
     });
 });
 
