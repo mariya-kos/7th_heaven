@@ -8,6 +8,8 @@ $(window).on("load", function () {
     });
     $(".rooms dd").each(function () {
         var dd_id = $(this).attr("id").slice(0,-5);
+        console.log(dd_id);
+        console.log($('#' + dd_id).html());
         $(this).append($('#' + dd_id).html());
     });
 });
