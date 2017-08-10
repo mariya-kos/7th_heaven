@@ -1,6 +1,10 @@
 console.log("hello")
 $(".rooms dt").on("click", function () {
-    console.log($("selected_room"));
+    $(".selected_room_desc").removeClass("selected_room_desc");
+    var selected_room = $(".selected_room");
+    if ($(this) !== selected_room) {
+        selected_room.removeClass("selected_room");
+    }
     $(this).toggleClass("selected_room");
-   $(this).next("dd").addClass("selected_room_desc");
+    $(this).next("dd").addClass("selected_room_desc");
 });
