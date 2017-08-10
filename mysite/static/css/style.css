@@ -252,7 +252,7 @@ to {display: block;}
     border: #7a748c 2px solid;
     padding: 10px;
 }
-.rroms dl {
+.rooms dt {
     padding: 5px;
 }
 .rooms dd {
@@ -265,6 +265,7 @@ to {display: block;}
     border: #7a748c 1px solid;
     border-bottom: 0;
 }
+.rooms dt:hover,
 .rooms .selected_room:hover {
     cursor: pointer;
 }
