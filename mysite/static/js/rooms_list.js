@@ -3,7 +3,7 @@ $(window).on("load", function () {
         var id = $(this).text().trim();
         $(this).next().attr("id", id);
         var pattern = '/room_\\d/i';
-        if (pattern.test(id)) {
+        if (id.search(pattern)) {
             print($(this))
         }
     });
