@@ -6,6 +6,7 @@ body {
     color: #4c444f;
 }
 .content {
+    padding: 10px;
     overflow: hidden;
 }
 .container {
@@ -97,6 +98,11 @@ footer {
 }
 .logo > img {
     width: 100%;
+}
+
+/*header_email*/
+header_email {
+    float: right;
 }
 
 /*nav*/
