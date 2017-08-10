@@ -247,10 +247,28 @@ cms-plugin.cms-plugin-text-node,
 from {display: none;}
 to {display: block;}
 }
+.rooms {
+    background: #ccaaeb;
+    border: #7a748c 2px solid;
+    padding: 10px;
+}
+.rroms dl {
+    padding: 5px;
+}
 .rooms dd {
     display: none;
     animation: room_view  2s infinite ease-in-out;
 }
+.rroms .selected_rooms {
+    padding: 5px;
+    background: #ad8ac3;
+    border: #7a748c 1px solid;
+    border-bottom: 0;
+}
 .rooms dd.selected_room_desc {
     display: block;
+    background: #de9797;
+    margin-left: 0;
+    padding: 0 5px;
+    border: #7a748c 1px solid;
 }
