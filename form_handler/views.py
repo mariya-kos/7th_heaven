@@ -16,13 +16,7 @@ def email(request):
             text = form.cleaned_data['name'] + '\n'
             text += form.cleaned_data['text']
             try:
-
-
-                msg = EmailMultiAlternatives(theme, text, email, ['mariyakosacheva@gmail.com'])
-                email_content = '...'
-                msg.attach_alternative(email_content, "text/html")
-                msg.send()
-                # send_mail(theme, text, email, ['mariyakosacheva@gmail.com'])
+                send_mail(theme, text, email, ['mariyakosacheva@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('thanks')
