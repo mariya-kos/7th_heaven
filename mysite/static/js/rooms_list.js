@@ -1,9 +1,10 @@
 $(window).on("load", function () {
     $("cms-plugin.cms-plugin-text-node").each(function () {
         var id = $(this).text().trim();
-        $(this).next().attr("id", id);
+        $(this).next().attr("id", id + '_imgs');
+
         if (id.slice(0,-1) == 'room_') {
-            print($(this))
+            console.log($(this))
         }
     });
 });
