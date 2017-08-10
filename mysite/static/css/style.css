@@ -146,6 +146,9 @@ a {
     text-decoration: none;
     color: #a1e81b;
 }
+a:hover {
+   color: #cfce35;
+}
 br {
     clear: both;
 }
