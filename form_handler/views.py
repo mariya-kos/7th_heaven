@@ -11,7 +11,7 @@ def email(request):
     else:
         form = ContactForm(request.POST)
         if form.is_valid():
-            theme = form.cleaned_data['theme']
+            theme = 'Тема сообщения:' + form.cleaned_data['theme']
             email = form.cleaned_data['email']
             text = 'Имя: ' + form.cleaned_data['name'] + '\n'
             text += 'Teкст сообщения: ' + form.cleaned_data['text']
@@ -25,4 +25,7 @@ def email(request):
     return render(request, "form_handler/email.html", {'form': form})
 
 def thanks(request):
-    return HttpResponse('<style>body{font:font-family:Verdana,sans-serif;font-size:14px;color:#4c444f;}a{color:#5b7033;text-decoration:none;}a:hover{color:#8b2525;text-decoration:underline;}</style><section class="thanks_content"><p>Thank you for your message.</p><p><a href="../../ru/">Вернуться на главную!</a></p></section>')
+    style = '<style>body{font:font-family:Verdana,sans-serif;font-size:14px;color:#4c444f;}a{color:#5b7033;text-decoration:none;}a:hover{color:#8b2525;text-decoration:underline;}</style>'
+    content = '<p>Ваше сообщение отправлено!</p>'
+    link_back = '<p><a href="../../ru/">Вернуться на главную!</a></p>'
+    return HttpResponse(f'{style}<section>{content}{link_back}</section>')
