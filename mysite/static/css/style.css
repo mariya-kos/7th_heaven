@@ -50,12 +50,8 @@ footer {
     border-bottom: #9a8eb9 1px solid;
     padding-bottom: 15px;
 }
-.footer_content a {
-    color: #5b7033;;
-}
 .footer_content a:hover {
     text-decoration: underline;
-    color: #372963;
 }
 .footer_links {
     float: right;
@@ -103,6 +99,11 @@ footer {
 .header_email {
     text-align: right;
 }
+.header_email a {color: #a1e81b;
+}
+.header_email a:hover {
+   color: #cfce35;
+}
 
 /*nav*/
 nav {
@@ -132,7 +133,7 @@ nav li a:hover {
 
 /*elem*/
 p {
-    margin: 5px;
+    margin: 5px 0;
 }
 h2 {
     margin: 10px 0;
@@ -149,7 +150,10 @@ h4 {
 }
 a {
     text-decoration: none;
-    color: #a1e81b;
+    color: #5b7033;
+}
+a:hover {
+    color: #632936;
 }
 a:hover {
    color: #cfce35;
@@ -273,7 +277,7 @@ to {display: block;}
 }
 .rooms .selected_room {
     padding: 5px;
-    background: #99e129;
+    background: #b7dd7c;
     border: #7a748c 1px solid;
     border-bottom: 0;
     color: #0d3b40;
