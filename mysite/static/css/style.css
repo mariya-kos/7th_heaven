@@ -381,9 +381,12 @@ to {display: block;}
         float: left;
     }
 }
-@media screen and (max-width: 360px) and (min-width: 240px) {
+@media screen and (max-width: 360px) {
     .cmsplugin_filer_folder_list li {
         width: auto;
         height: 200px;
+    }
+    #form_mail {
+        width: 95%;
     }
 }
