@@ -8,9 +8,8 @@ $(window).on("load", function () {
     });
     $(".rooms dd").each(function () {
         var dd_id = $(this).attr("id").slice(0,-5);
-        console.log(dd_id);
-        console.log($('#' + dd_id).html());
-        $(this).append($('#' + dd_id + ' ul').html());
+        var html = $('#' + dd_id + ' ul').html();
+        $(this).append('<div class="cmsplugin_filer_folder_list room_imgs"' + html + '</div>');
     });
 });
 
