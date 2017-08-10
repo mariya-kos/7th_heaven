@@ -77,6 +77,11 @@ STATICFILES_DIRS = (
 )
 SITE_ID = 1
 
+EMAIL_HOST = "mail.sakrament.by"
+EMAIL_PORT= 25
+EMAIL_HOST_USER= "noreply@sakrament.by"
+EMAIL_HOST_PASSWORD= "54321ytrewq54321"
+
 
 TEMPLATES = [
     {
