@@ -10,7 +10,8 @@ body {
     overflow: hidden;
 }
 .main_container {
-    background: url("main_bg.PNG");
+    background-image: url("main_bg.PNG");
+    background-size: contain;
 }
 .container {
     width: 960px;
@@ -27,7 +28,7 @@ header {
     position: fixed;
     width: 100%;
     background: linear-gradient(to top, #44cdd5, #5f9691);
-    border-bottom: #7a748c 3px solid;
+    border-bottom: #7a748c 1px solid;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 999;
 }
@@ -143,7 +144,7 @@ h3 {
 }
 a {
     text-decoration: none;
-    color: ##a1e81b;
+    color: #a1e81b;
 }
 br {
     clear: both;
