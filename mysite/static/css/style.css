@@ -27,7 +27,6 @@ header {
     z-index: 999;
 }
 header .container {
-    overflow: hidden;
     padding-top: 10px;
 }
 
