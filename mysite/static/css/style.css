@@ -16,11 +16,6 @@ body {
     width: 960px;
     margin: 0 auto;
 }
-@media screen and (max-width: 980px) {
-    .container {
-        width: 95%;
-    }
-}
 
 /*header*/
 header {
@@ -47,7 +42,7 @@ footer {
 }
 .footer_content .mission {
     font-style: italic;
-    border-bottom: #9a8eb9 1px solid;
+    border-bottom: #5d8272 1px solid;
     padding-bottom: 15px;
 }
 .footer_content a:hover {
@@ -153,10 +148,7 @@ a {
     color: #5b7033;
 }
 a:hover {
-    color: #632936;
-}
-a:hover {
-   color: #cfce35;
+    color: #8b2525;
 }
 br {
     clear: both;
@@ -295,8 +287,32 @@ to {display: block;}
 }
 
 /*adaptive*/
+@media screen and (max-width: 980px) {
+    .container {
+        width: 95%;
+    }
+}
 @media screen and (max-width: 650px) {
     #form_mail {
         width: 80%;
+    }
+    .cmsplugin_filer_folder_slideshow {
+        float: none;
+        width: 60%;
+        margin: 0 auto 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    #form_mail {
+        width: 80%;
+    }
+    .footer_content,
+    .footer_links {
+        width: auto;
+        overflow: hidden;
+        float: none;
+    }
+    .footer_links li {
+        float: left;
     }
 }
