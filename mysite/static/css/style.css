@@ -86,6 +86,8 @@ footer {
 }
 .copyright p {
     text-align: center;
+    line-height: 0;
+    font-size: 12px;
 }
 
 /*logo*/
