@@ -1,7 +1,7 @@
 $(window).on("load", function () {
     $("cms-plugin.cms-plugin-text-node").each(function () {
         var id = $(this).text().trim();
-
+        console.log(id)
         if (id.slice(0,-1) == 'room_') {
             $(this).css("display", "none");
         }
