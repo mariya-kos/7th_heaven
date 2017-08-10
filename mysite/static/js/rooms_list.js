@@ -5,10 +5,11 @@ $(window).on("load", function () {
         if (id.slice(0,-1) == 'room_') {
             $(this).css("display", "none");
         }
-        $(this).next().attr("id", id + '_imgs');
+        $(this).next().attr("id", id);
     });
     $(".rooms dd").each(function () {
-        $(this).append($('#' + $(this).attr("id") + '_imgs').html());
+        var dd_id = $(this).attr("id").slice(0, -5);
+        $(this).append($('#' + dd_id).html());
     });
 });
 
