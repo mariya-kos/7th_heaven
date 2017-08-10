@@ -101,14 +101,14 @@ footer {
 }
 
 /*header_email*/
-header_email {
-    float: right;
+.header_email {
+    text-align: right;
 }
 
 /*nav*/
 nav {
     float: right;
-    padding-top: 20px;
+    padding-top: 8px;
 }
 .nav {
     padding-left: 0;
