@@ -9,8 +9,7 @@ body {
     overflow: hidden;
 }
 .main_container {
-    background-image: url("main_bg.PNG");
-    background-size: contain;
+    background: #f8f8f8;
 }
 .container {
     width: 960px;
@@ -132,7 +131,7 @@ p {
 h2 {
     margin: 10px 0;
     padding: 10px;
-    background: linear-gradient(to left, rgba(255,255,255,0.00001), #d2c1c1);
+    background: linear-gradient(to left, rgba(255,255,255,0.00001), #aff1f5);
     color: #717671;
 }
 h3 {
